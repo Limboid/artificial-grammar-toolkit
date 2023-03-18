@@ -184,7 +184,9 @@ Generic:
 - Lots of natural language primitives
 - Convenience extensions to gym.Env for data collection
 
-Recipies (Generic)
+Synthesize relational data for training natural language models:
+
+Recipes (Generic)
 
 - No execution, just rendering
 - Proof of concept for synthetic data generation
@@ -222,7 +224,7 @@ Blender (Programming)
 
 Creative (Blender)
 
-- Adds FictionNode, NonfictionNode, StoryNode, ChapterNode, SectionNode, ParagraphNode, RyhmeNode and modifies the generic language nodes to support writing several types of literature
+- Adds FictionNode, NonfictionNode, StoryNode, ChapterNode, SectionNode, ParagraphNode, RhymeNode and modifies the generic language nodes to support writing several types of literature
 - Adds nodes for common music primitives and imports MIDI synthesizers
 - Adds STTNode for speech generation
 - Uses blender's ImageNode and SceneNode to generate accompanying images or animations (2d or 3d)
@@ -246,6 +248,7 @@ Website (UI, Creative):
   - like NDSDM but w/o a policy. Useful for understanding how the policy recieves options which is useful to mitigating safety issues
 
 - node-tree + deeppy for structured decision making (NDSDM):
+  - this has been moved to tensorcode
   - passes: [generate, policy, render, execute]
   - initial task attached to root
   - tree is a GNN network
